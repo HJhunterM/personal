@@ -222,7 +222,7 @@ function Skills() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {skills.map((skill) => (
-            <Card key={skill.name} className="glass-card glow-border hover:scale-105 transition-all duration-300">
+            <Card key={skill.name} className="glass-card hover:scale-105 transition-transform duration-300">
               <CardHeader className="text-center">
                 <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mx-auto mb-4 text-primary">
                   {skill.icon}
@@ -245,7 +245,7 @@ function Projects() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           <span className="text-gradient">项目</span> 经历
         </h2>
-        <p className="text-center text-muted-foreground mb-12">展示一些我参与或独立完成的项目</p>
+        <p className="text-center text-muted-foreground mb-12">一些我参与或独立完成的项目</p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project) => (
@@ -288,7 +288,7 @@ function QA() {
     },
     {
       question: 'Q3: 为什么在华为只干了四个月呢？是试用期没通过吗？',
-      answer: 'A: 不是，是组织架构调整，协商后离开。我所在的数学库组是刚刚成立，人员由别的部门内转+外面社招组成，组织不稳定，年底大调整，最终选择离开',
+      answer: 'A: 不是，是组织架构调整，协商后离开。我所在的数学库组是刚刚成立，人员由别的部门内转 + 外面社招组成，组织不稳定，年底大调整，最终选择离开',
     },
     {
       question: 'Q4: 在2025年1月-5月，就是你入职滴滴之前，这段gap你在干什么？为什么选择滴滴？',
@@ -354,7 +354,7 @@ function Footer() {
       <div className="container mx-auto px-4 text-center">
         <p className="text-muted-foreground">
           © {new Date().getFullYear()}{' '}
-          <a href="https://rag.mhj-ai.xyz" className="text-primary hover:underline">
+          <a href="https://rag.mhj-ai.xyz" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
             mhj-ai.xyz
           </a>
           {' '}· 用 ❤️ 和代码构建
@@ -365,7 +365,7 @@ function Footer() {
 }
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true)
+  const [darkMode, setDarkMode] = useState(false)
   
   return (
     <div className={`min-h-screen ${darkMode ? 'dark' : ''} bg-background text-foreground`}>
