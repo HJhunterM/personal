@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Github, Mail, Linkedin, ExternalLink, Code2, Database, Cpu, ChevronDown, Moon, Sun, HelpCircle } from 'lucide-react'
+import { Github, Mail, ExternalLink, Code2, Database, Cpu, ChevronDown, Moon, Sun, HelpCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
@@ -33,7 +33,7 @@ const projects = [
   },
 ]
 
-function Navbar({ darkMode, setDarkMode }) {
+function Navbar({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: (value: boolean) => void }) {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
