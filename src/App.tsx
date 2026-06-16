@@ -319,7 +319,7 @@ function QA() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             常见 <span className="text-gradient">疑问</span>
           </h2>
-          <p className="text-center text-muted-foreground mb-12">关于我和技术的一些常见问题( HR 必看～)</p>
+          <p className="text-center text-muted-foreground mb-12">关于我的一些常见问题，希望可以帮助您解惑</p>
           
           <div className="space-y-6">
             {qaItems.map((item, index) => (
