@@ -14,6 +14,12 @@ const skills = [
 
 const projects = [
   {
+    title: 'RAG知识库问答系统',
+    desc: '面向电商场景的智能导购Agent，基于 ReAct 模式从零实现，通过自然对话理解用户需求，支持商品搜索、库存查询、优惠计算、智能推荐、知识问答，可以提升用户购物体验和购买转化率。',
+    tags: ['Agent', 'RAG', 'Memory','ReAct'],
+    link: 'https://github.com/HJhunterM/E-Comm-Agent',
+  },
+  {
     title: '巴西餐饮SaaS系统',
     desc: '面向巴西本地餐饮商家的外卖SaaS平台，服务巴西本土中小餐厅、连锁餐饮，提供店铺管理、订单履约、本地支付结算一体化服务，支撑日均万级订单交易',
     tags: ['Java', 'Springboot', 'Mysql', 'Redis'],
@@ -24,12 +30,6 @@ const projects = [
     desc: '电商促销秒杀系统，面向C端用户提供限时限量抢购场景，支持商品预热、实时库存扣减、用户限购管控、订单异步生成，解决瞬时高并发下的超卖、重复下单问题，保障促销活动平稳运行',
     tags: ['Redis', 'Lua', 'Kafka'],
     link: 'https://github.com/HJhunterM/seckill',
-  },
-  {
-    title: 'RAG知识库问答系统',
-    desc: '基于 LangChain 与 本地 Qwen 大模型构建的轻量级 RAG 知识库问答系统，支持对 PDF 文档内容进行语义检索与大模型问答生成，可用于介绍履历、回答问题',
-    tags: ['LLM', 'RAG', 'Agent','Vibe Coding'],
-    link: 'https://rag.mhj-ai.xyz',
   },
 ]
 
@@ -159,7 +159,7 @@ function About() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  拥有 2 年 Java 开发经验，熟悉分布式、微服务架构。<br />
+                  拥有 2 年后端开发经验，熟悉分布式、微服务架构。<br />
                   能够结合 AI 独立完成全栈项目的开发与部署。<br />
                   对 AI 新技术充满热情，积极探索 agent 的实际应用。
                 </p>
