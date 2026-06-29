@@ -9,12 +9,12 @@ import heroBg from '@/assets/hero-tech-background.png'
 const skills = [
   { icon: <Database className="w-6 h-6" />, name: 'Java后端', desc: 'Java，Springboot，Mysql，Redis' },
   { icon: <Code2 className="w-6 h-6" />, name: 'C++', desc: 'duilib，BLAS，底层优化' },
-  { icon: <Cpu className="w-6 h-6" />, name: 'AI 技术', desc: '机器学习、深度学习，LLM，agent' },
+  { icon: <Cpu className="w-6 h-6" />, name: 'AI 技术', desc: '机器学习、深度学习，LLM，Agent' },
 ]
 
 const projects = [
   {
-    title: 'RAG知识库问答系统',
+    title: '电商智能导购Agent',
     desc: '面向电商场景的智能导购Agent，基于 ReAct 模式从零实现，通过自然对话理解用户需求，支持商品搜索、库存查询、优惠计算、智能推荐、知识问答，可以提升用户购物体验和购买转化率。',
     tags: ['Agent', 'RAG', 'Memory','ReAct'],
     link: 'https://github.com/HJhunterM/E-Comm-Agent',
@@ -161,7 +161,7 @@ function About() {
                 <p className="text-muted-foreground leading-relaxed">
                   拥有 2 年后端开发经验，熟悉分布式、微服务架构。<br />
                   能够结合 AI 独立完成全栈项目的开发与部署。<br />
-                  对 AI 新技术充满热情，积极探索 agent 的实际应用。
+                  对 AI 新技术充满热情，积极探索 Agent 的实际应用。
                 </p>
               </CardContent>
             </Card>
